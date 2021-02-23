@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background: linear-gradient(#444, #222);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 120vh;
+  color: white;
+  text-align: center;
+}
+
+.hero-section-text {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-section-text h1 {
+  width: 100%;
+  font-size: 2rem;
+  z-index: 9;
+}
+
+.hero-section-image img {
+  height: 200px;
+  transform: rotate(-5deg);
+  margin-left: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-section-image img:hover {
+  transform: scale(2.4);
+}
+
+.left-side-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 80%;
+  bottom: 0;
+  margin: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right-side-images {
+  position: absolute;
+  top: 0;
+  left: 80%;
+  right: 0;
+  bottom: 0;
+  margin: 50px 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 250px;
+  justify-content: space-between;
+}
+
+.bottom-images {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px 250px;
+  justify-content: space-between;
+}
+
+.amazing-man {
+  position: relative;
+  height: 180px;
+  animation: drop 2s forwards ease-in-out paused;
+  z-index: 9;
+}
+
+.amazing-man:active {
+  animation: drop running;
+}
+
+.batman {
+  height: 180px;
+  animation: run 2s forwards ease-in-out paused;
+  z-index: 9;
+  position: relative;
+}
+
+.batman:active {
+  animation: run running;
+}
+
+batman:hover {
+  cursor: pointer;
+}
+
+.black-widow {
+  height: 180px;
+  margin-right: 90px;
+  margin-top: 30px;
+  animation-name: move2;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.bob {
+  height: 180px;
+  margin-top: 30px;
+  animation: up 2s forwards ease-in-out paused;
+  z-index: 9;
+  position: relative;
+}
+
+.bob:active {
+  animation: up running;
+}
+
+.captain-america {
+  height: 200px;
+}
+
+.deadpool {
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 50px;
+  animation: fadeout 2s forwards ease-in-out paused;
+  z-index: 9;
+}
+
+.deadpool:active {
+  animation: fadeout running;
+}
+
+.flash {
+  height: 200px;
+  margin-top: 25px;
+  margin-left: 30px;
+  animation: fadeout 2s forwards ease-in-out paused;
+  z-index: 9;
+}
+
+.flash:active {
+  animation: fadeout running;
+}
+
+.hawkeye {
+  height: 200px;
+}
+
+.hulken {
+  height: 200px;
+}
+
+.iron-man {
+  height: 200px;
+}
+
+.robin {
+  height: 200px;
+  animation: fadeout 2s forwards ease-in-out paused;
+  z-index: 9;
+}
+
+.robin:active {
+  animation: fadeout running;
+}
+
+.sandman {
+  height: 200px;
+  animation: fadeout 2s forwards ease-in-out paused;
+  z-index: 9;
+}
+
+.sandman:active {
+  animation: fadeout running;
+}
+
+.spiderman {
+  position: relative;
+  height: 200px;
+  animation: dropspin 2s forwards ease-in-out paused;
+  z-index: 9;
+}
+
+.spiderman:active {
+  animation: dropspin running;
+}
+
+.superwoman {
+  position: relative;
+  height: 200px;
+  animation: fadeout 2s forwards ease-in-out paused;
+}
+
+.supwerwoman:active {
+  animation: fadeout 2s running;
+}
+
+.superman {
+  height: 200px;
+  animation: up 2s forwards ease-in-out paused;
+  z-index: 9;
+  position: relative;
+}
+
+.superman:active {
+  animation: up running;
+}
+
+.thor {
+  height: 200px;
+}
+
+.mid-left-images {
+  position: absolute;
+  left: 0;
+  right: 50;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mid-right-images {
+  position: absolute;
+  left: 50;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wonderwoman {
+  height: 200px;
+  margin-top: 350px;
+  margin-right: 300px;
+  animation: drop 2s forwards ease-in-out paused;
+  z-index: 100;
+  position: relative;
+}
+
+.wonderwoman:active {
+  animation: drop 2s forwards ease-in-out running;
+}
+
+.wolverine {
+  height: 200px;
+  margin-top: 350px;
+  margin-left: 300px;
+  width: 25%;
+  animation: fadeout2 2s forwards ease-in-out paused;
+  z-index: 9;
+}
+
+.wolverine:active {
+  animation: fadeout2 running;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout2 {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes flyaway {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 500;
+    top: 500;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 5000px;
+  }
+}
+
+@keyframes dropspin {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 5000px;
+    transform: rotate(7200deg);
+  }
+}
+
+@keyframes up {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 5000px;
+  }
+}
+
+@keyframes run {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 5000px;
+  }
+}

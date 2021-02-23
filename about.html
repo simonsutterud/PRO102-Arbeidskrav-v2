@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>THE AVENGERS</title>
+    <link rel="icon" href="images/avengers icon.png" />
+    <style type="text/css">
+      /* På denne siden styler vi i html dokumentet for å vise at vi klarer begge metodene. Her ligger styling av klassen images, denne forteller at bildene skal holde samma høyde på 200px og ligge ved siden av hverendre. */
+
+      .images {
+        position: absolute;
+        display: flex;
+        height: 200px;
+      }
+
+      /* Her ligger styling av de forskjellige bildene, den forteller bredden, border og at vi ønsker border radius på ytterpunktene. Dette skaper illusjonen av en pen "header" */
+
+      .thor3 {
+        width: 220px;
+        height: 200px;
+        border-top: #000000 solid 12px;
+        border-right: #000000 solid 6px;
+        border-left: #000000 solid 12px;
+        border-top-left-radius: 30px;
+      }
+      .the-hulk2 {
+        width: 220px;
+        height: 200px;
+        border-top: #000000 solid 12px;
+        border-right: #000000 solid 6px;
+        border-left: #000000 solid 6px;
+      }
+
+      .ironman2 {
+        width: 220px;
+        height: 200px;
+        border-top: #000000 solid 12px;
+        border-right: #000000 solid 6px;
+        border-left: #000000 solid 6px;
+      }
+
+      .black-widow2 {
+        width: 220px;
+        height: 200px;
+        border-top: #000000 solid 12px;
+        border-right: #000000 solid 6px;
+        border-left: #000000 solid 6px;
+      }
+
+      .hawkeye2 {
+        width: 220px;
+        height: 200px;
+        border-top: #000000 solid 12px;
+        border-right: #000000 solid 6px;
+        border-left: #000000 solid 6px;
+      }
+
+      .captain-america2 {
+        width: 220px;
+        height: 200px;
+        border-top: #000000 solid 12px;
+        border-right: #000000 solid 12px;
+        border-left: #000000 solid 6px;
+        border-top-right-radius: 30px;
+      }
+
+      /*Her ligger stylingen av nedre delen av siden. Både hele boksen og den høyre og venstre boksen. Det forteller høyde og bredde og for å matche med headeren vi har lagd tidligere matcher vi med border.*/
+
+      .bottom-part {
+        background: #000000;
+        position: absolute;
+        margin-top: 200px;
+        height: 500px;
+        width: 1400px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+
+      .left-part {
+        background: #ff7ad7;
+        position: absolute;
+        margin-top: 6px;
+        height: 500px;
+        width: 696px;
+        border: #000000 solid 12px;
+        border-bottom-left-radius: 30px;
+      }
+
+      .right-part {
+        background: #e1dff7;
+        position: absolute;
+        margin-top: 6px;
+        margin-left: 696px;
+        height: 100%;
+        width: 684px;
+        border: #000000 solid 12px;
+        border-bottom-right-radius: 30px;
+      }
+
+      /*Her ligger styling av bilden avengers, vi tilpasser bildet for å passe in i den venstre boxen.*/
+
+      .avengers2 {
+        width: 684px;
+        height: 500px;
+        border-bottom-left-radius: 20px;
+      }
+
+      /*Her ligger styling av overskrift og paragraf texten.*/
+
+      .right-part h1 {
+        text-align: center;
+      }
+
+      .right-part p {
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        line-height: 27px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Her er en div tag med klasse "images", i div taggen ligger bilder på alle superheltene i The Avengers og linker til alle superheltenes wikipedia sider-->
+
+    <div class="images">
+      <a
+        href="https://en.wikipedia.org/wiki/Thor_(Marvel_Cinematic_Universe)?fbclid=IwAR1nbqv53gna2kRyW2n4-PZPdzIchuWHln5h9B87vHyFEyYtmPOHzg_2BZE"
+        target="_blank"
+      >
+        <img src="images/thor3.jpg" alt="Thor" class="thor3" />
+      </a>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Hulk?fbclid=IwAR3yGiEAAC0OVUnbDmnlI4PBMvAocwmqxqsl10jVusRgRGUVeAWEauc3Nik"
+        target="_blank"
+      >
+        <img src="images/thehulk.jpg" alt="The Hulk" class="the-hulk2" />
+      </a>
+
+      <a href="https://en.wikipedia.org/wiki/Iron_Man" target="_blank">
+        <img src="images/ironman.jpg" alt="Ironman" class="ironman2" />
+      </a>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Black_Widow_(Natasha_Romanova)"
+        target="_blank"
+      >
+        <img
+          src="images/blackwidow.jpeg"
+          alt="Black Widow"
+          class="black-widow2"
+        />
+      </a>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Hawkeye_(Clint_Barton)"
+        target="_blank"
+      >
+        <img src="images/hawkeye.jpg" alt="Hawkeye" class="hawkeye2" />
+      </a>
+
+      <a href="https://en.wikipedia.org/wiki/Captain_America" target="_blank">
+        <img
+          src="images/capteinamerica.jpg"
+          alt="Captain America"
+          class="captain-america2"
+        />
+      </a>
+    </div>
+
+    <!--Her er en div tag som inneholder hele nedre delen av siden. Inni div tagen finner vi to nye div tagger som deler opp siden i 2 seksjoner. Inne i den venstre divtaggen (klass left-part) finner vi en bilde på hele avengers gjengen. Inne i den høyre divtaggen (klass right-part) finner vi en overskrift og en paragraf med informasjon om avengers gjengen-->
+
+    <div class="bottom-part">
+      <div class="left-part">
+        <img src="images/avengers.jpg" alt="The Avengers" class="avengers2" />
+      </div>
+
+      <div class="right-part">
+        <h1>THE AVENGERS</h1>
+        <p>
+          Earth's Mightiest Heroes is an American superhero animated television
+          series by Marvel Animation in cooperation with Film Roman, based on
+          the Marvel Comics superhero team the Avengers. The show debuted on
+          Disney XD and online in the fall of 2010, starting with a 20-part
+          micro-series that were later broadcast as five television episodes. In
+          the second season, it was one of the inaugural shows of the Marvel
+          Universe programming block alongside Ultimate Spider-Man.
+          <br />
+          <br />
+          <br />
+          The series initially features a team based on the roster for the
+          original Avengers, composed of Iron Man, Giant-Man, Hulk, Thor, and
+          Wasp. The team is later joined by Captain America, Black Panther, and
+          Hawkeye in the first season, and Ms. Marvel and Vision in the second
+          season. In terms of overall tone and style, the series is based
+          principally on the original stories by Stan Lee and Jack Kirby. The
+          series also uses material from all eras of the comic's run as well as
+          other sources, such as the Marvel Cinematic Universe.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--Her avsluttes siden-->
