@@ -1,8 +1,12 @@
+/* Gir hele dokukmentet 0 margin og padding, og velger font */
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
 }
+
+/* Styler body */
 
 body {
   background: linear-gradient(#444, #222);
@@ -12,6 +16,8 @@ body {
   color: white;
   text-align: center;
 }
+
+/* Styler teksten på siden */
 
 .hero-section-text {
   width: 100%;
@@ -27,6 +33,8 @@ body {
   z-index: 9;
 }
 
+/* Styler Avengers-logoen */
+
 .hero-section-image img {
   height: 200px;
   transform: rotate(-5deg);
@@ -37,6 +45,8 @@ body {
 .hero-section-image img:hover {
   transform: scale(2.4);
 }
+
+/* Styler de forskjellige bilde-kontainerne */
 
 .left-side-images {
   position: absolute;
@@ -83,6 +93,8 @@ body {
   margin: -40px 250px;
   justify-content: space-between;
 }
+
+/* Styler alle figurene og aktiverer animasjonene */
 
 .amazing-man {
   position: relative;
@@ -275,6 +287,8 @@ batman:hover {
 .wolverine:active {
   animation: fadeout2 running;
 }
+
+/* Animasjoner */
 
 @keyframes fadeout {
   0% {
